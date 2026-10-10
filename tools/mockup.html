@@ -1,0 +1,85 @@
+<html><head><style>
+*{box-sizing:border-box} body{margin:0;width:2000px;height:1320px;background:linear-gradient(135deg,#FFF3E2,#FBE3C8);font-family:"Noto Sans CJK SC",sans-serif;color:#4A2C1D}
+h1{position:absolute;left:60px;top:30px;margin:0;font-size:44px} .sub{position:absolute;left:62px;top:92px;font-size:22px;opacity:.65}
+.phone{position:absolute;top:150px;width:430px;height:900px;border-radius:64px;background:#111;padding:14px;box-shadow:0 30px 60px rgba(74,44,29,.25)}
+.screen{width:100%;height:100%;border-radius:52px;overflow:hidden;position:relative}
+.island{position:absolute;top:12px;left:50%;transform:translateX(-50%);width:120px;height:34px;background:#000;border-radius:20px;z-index:5}
+.cap{position:absolute;top:1080px;width:430px;text-align:center;font-size:24px;font-weight:700}
+.capsub{position:absolute;top:1118px;width:430px;text-align:center;font-size:18px;opacity:.6}
+/* app */
+.app{background:#FFF8EE;padding:58px 22px 0}
+.nav{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:18px;margin-bottom:10px}
+.row{display:flex;justify-content:space-between;align-items:center;font-size:14px;margin-bottom:4px}
+.pill{background:rgba(74,44,29,.08);border-radius:20px;padding:3px 10px;font-size:12px}
+.card{background:#fff;border-radius:22px;padding:16px;box-shadow:0 4px 12px rgba(74,44,29,.08)}
+.badge{color:#D9742A;font-weight:700;font-size:13px}
+.line{font-size:19px;font-weight:700;margin:8px 0 14px;line-height:1.45}
+.btns{display:flex;justify-content:space-between}
+.b1{border-radius:12px;padding:8px 14px;background:rgba(74,44,29,.08);font-size:14px;font-weight:600}
+.b2{border-radius:12px;padding:8px 14px;background:#D9742A;color:#fff;font-size:14px;font-weight:600}
+.stats{display:flex;gap:12px;margin-top:12px}.st{flex:1;background:#fff;border-radius:18px;padding:12px}
+.st .t{font-size:12px;opacity:.7}.st .v{font-size:24px;font-weight:800;margin-top:4px}
+.hint{font-size:12px;opacity:.55;margin-top:10px;line-height:1.5}
+/* lock */
+.lock{background:linear-gradient(180deg,#3a4a6b 0%,#6c5b7b 55%,#c06c84 100%);color:#fff;text-align:center;padding-top:70px}
+.date{font-size:20px;font-weight:600;opacity:.9}.time{font-size:96px;font-weight:700;line-height:1;margin-top:4px;letter-spacing:-2px}
+.acc{display:flex;justify-content:center;gap:12px;margin-top:14px;align-items:center}
+.circ{width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px)}
+.circ img{width:62px;height:62px;filter:invert(1)}
+.rect{width:172px;height:72px;border-radius:14px;background:rgba(255,255,255,.12);display:flex;align-items:center;gap:6px;padding:4px 8px;text-align:left}
+.rect img{width:50px;height:50px;filter:invert(1)}
+.rect span{font-size:12.5px;font-weight:700;line-height:1.3}
+.notif{margin:420px 14px 0;background:rgba(255,255,255,.75);color:#222;border-radius:22px;padding:12px 14px;text-align:left;display:flex;gap:10px}
+.notif img{width:40px;height:40px;border-radius:10px}
+.notif b{font-size:14px}.notif p{margin:2px 0 0;font-size:14px;line-height:1.35}
+/* home */
+.home{background:linear-gradient(160deg,#9ad0c2,#f6d6a8);padding:70px 20px 0}
+.wrow{display:flex;gap:18px}
+.ws{width:170px;height:170px;border-radius:26px;background:#FFF8EE;box-shadow:0 6px 16px rgba(0,0,0,.12);padding:10px;display:flex;flex-direction:column;align-items:center}
+.ws img{width:112px;height:112px}.ws div{font-size:11px;font-weight:700;text-align:center;line-height:1.3}
+.wm{margin-top:18px;width:358px;height:170px;border-radius:26px;background:#FFF8EE;box-shadow:0 6px 16px rgba(0,0,0,.12);padding:14px;display:flex;gap:10px}
+.wm img{width:128px;height:128px;align-self:center}.wm .tx{display:flex;flex-direction:column;justify-content:space-between}
+.wm .bd{font-size:11px;font-weight:800;color:#5c9e66}.wm .ln{font-size:15px;font-weight:700;line-height:1.4}.wm .ft{font-size:11px;opacity:.65}
+.icons{display:grid;grid-template-columns:repeat(4,70px);gap:22px 18px;margin-top:26px}
+.ic{width:70px;height:70px;border-radius:17px;background:rgba(255,255,255,.55)}
+.ic.cat{background:url(/workspace/lockscreen-cat/ios/LockscreenCat/Shared/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png) center/cover}
+/* share card */
+.share{position:absolute;left:1560px;top:190px;width:380px;}
+.sc{width:360px;height:520px;border-radius:32px;background:#FFF8EE;border:4px solid #F4A04B;padding:22px;display:flex;flex-direction:column;align-items:center;box-shadow:0 20px 40px rgba(74,44,29,.18)}
+.sc .h{display:flex;justify-content:space-between;width:100%;font-size:15px}.sc img{width:230px;height:230px;margin-top:8px}
+.sc .l{font-size:22px;font-weight:800;text-align:center;line-height:1.45;margin-top:6px}.sc .s{font-size:15px;opacity:.7;margin-top:14px;font-weight:600}
+.sc .f{margin-top:auto;font-size:12px;opacity:.5;align-self:flex-end}
+</style></head><body>
+<h1>锁屏萌宠 · 第一版预览</h1><div class="sub">示例数据 · 北京时间 22:00 · App / 锁屏 / 桌面 / 分享卡</div>
+
+<div class="phone" style="left:60px"><div class="screen app"><div class="island"></div>
+ <div class="nav"><span></span><span>锁屏萌宠</span><span style="font-size:20px">⚙︎</span></div>
+ <div class="row"><span>10月10日 周六 · 晚上</span><span><span class="pill" style="background:rgba(244,160,75,.25)">示例数据</span> <span class="pill">嫌弃</span></span></div>
+ <div style="text-align:center"><img src="file:///workspace/lockscreen-cat/assets/cat-disdain.svg" style="width:270px;height:270px"></div>
+ <div class="card"><div class="badge">今日吐槽</div><div class="line">走了 4,560 步，腿说还行，眼睛说困了。</div>
+ <div class="btns"><span class="b1">⟲ 换一句</span><span class="b2">分享卡</span></div></div>
+ <div class="stats"><div class="st"><div class="t">🚶 今日步数</div><div class="v">4,560</div></div><div class="st"><div class="t">🌙 昨晚入睡</div><div class="v">00:15</div></div></div>
+ <div class="hint">数据只在这台手机上处理，没有服务器，也不联网。</div>
+</div></div>
+<div class="cap" style="left:60px">App 主屏</div><div class="capsub" style="left:60px">大猫 + 今日一句 + 换一句 / 分享卡</div>
+
+<div class="phone" style="left:550px"><div class="screen lock"><div class="island"></div>
+ <div class="date">10月10日 星期六</div><div class="time">22:00</div>
+ <div class="acc"><div class="circ"><img src="file:///workspace/lockscreen-cat/assets/cat-disdain-mono.svg"></div>
+ <div class="rect"><img src="file:///workspace/lockscreen-cat/assets/cat-disdain-mono.svg"><span>走了 4,560 步，腿说还行，眼睛说困了。</span></div></div>
+ <div class="notif" style="margin-top:500px"><img src="/workspace/lockscreen-cat/ios/LockscreenCat/Shared/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png"><div><b>小猫有话说</b><p>4,560 步不容易，别用熬夜把它糟蹋了。</p></div></div>
+</div></div>
+<div class="cap" style="left:550px">锁屏</div><div class="capsub" style="left:550px">圆形 / 长方形单色小组件 + 22:00 本地提醒</div>
+
+<div class="phone" style="left:1040px"><div class="screen home"><div class="island"></div>
+ <div class="wrow"><div class="ws"><img src="file:///workspace/lockscreen-cat/assets/cat-happy.svg"><div>8,230 步，腿今天很争气，本猫勉强鼓掌。</div></div>
+ <div class="ws"><img src="file:///workspace/lockscreen-cat/assets/cat-nightowl.svg"><div>昨晚 01:47 入睡</div></div></div>
+ <div class="wm"><img src="file:///workspace/lockscreen-cat/assets/cat-proud.svg"><div class="tx"><div class="bd">今日鼓励</div><div class="ln">走了这么多路，今晚的被窝你配得上。</div><div class="ft">🚶 8,230 &nbsp; 🌙 00:15</div></div></div>
+ <div class="icons"><div class="ic cat"></div><div class="ic"></div><div class="ic"></div><div class="ic"></div><div class="ic"></div><div class="ic"></div><div class="ic"></div><div class="ic"></div></div>
+</div></div>
+<div class="cap" style="left:1040px">桌面</div><div class="capsub" style="left:1040px">小号（晚上 / 早上）+ 中号</div>
+
+<div class="share"><div class="sc"><div class="h"><span>10月10日 · 小猫观察日记</span><b style="background:rgba(244,160,75,.25);border-radius:12px;padding:2px 10px;font-size:13px">今日吐槽</b></div>
+<img src="file:///workspace/lockscreen-cat/assets/cat-disdain.svg"><div class="l">走了 4,560 步，腿说还行，眼睛说困了。</div><div class="s">🚶 4,560 步 &nbsp;&nbsp; 🌙 00:15</div><div class="f">来自我的锁屏萌宠</div></div>
+<div style="text-align:center;font-size:24px;font-weight:700;margin-top:30px">分享卡</div><div style="text-align:center;font-size:18px;opacity:.6;margin-top:6px">「存下这张卡」/ 分享</div></div>
+</body></html>

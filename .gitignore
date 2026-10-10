@@ -1,0 +1,14 @@
+# Xcode
+xcuserdata/
+DerivedData/
+build/
+*.xcuserstate
+*.xcscmblueprint
+*.moved-aside
+# macOS
+.DS_Store
+# Python
+__pycache__/
+*.pyc
+# 打包产物
+*.zip

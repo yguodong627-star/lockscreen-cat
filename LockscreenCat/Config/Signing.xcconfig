@@ -1,0 +1,16 @@
+// =====================================================================
+//  签名配置 —— 只需要改这里（免费 Apple ID 必须用一个全球唯一的 Bundle ID）
+// =====================================================================
+
+// 1) 把 com.example.yourname 改成你自己的、独一无二的前缀，比如 com.yangguodong.cat2026
+BUNDLE_ID_PREFIX = com.yangguodong.cat2026
+
+// 2) 开发团队：留空即可，在 Xcode 里给两个 target 选 “(Personal Team)” 就行。
+//    也可以把 Team ID（10 位字母数字）填在这里，两个 target 会一起生效。
+DEVELOPMENT_TEAM =
+
+// 3) App Group：自动由前缀生成，App 和小组件共用（entitlements 和 Info.plist 都引用它，无需手改）
+APP_GROUP_ID = group.$(BUNDLE_ID_PREFIX).lockscreencat
+
+// 4) App 显示名（桌面图标下 / 小组件列表里显示的名字，两个 target 共用）。文章 Bot 定名后只改这里。
+APP_DISPLAY_NAME = 锁屏萌宠

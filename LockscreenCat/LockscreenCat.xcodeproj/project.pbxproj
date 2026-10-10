@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0201312DB527814ED247EB85 /* LineEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C462C82404868287D0884B /* LineEngine.swift */; };
+		05DC1431E82FC284B6836C0C /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CEE360096E66308B4E3821 /* SharedStore.swift */; };
+		18B71EE00B6EEA6C3A6F2811 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD374865A01C7D2982CA27D /* Pet.swift */; };
+		1E03B7284D37D7A6AEB4A164 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7709ADD413C69CF7C26B6 /* ContentView.swift */; };
+		1F2A045271F83A393A8294E8 /* roasts.json in Resources */ = {isa = PBXBuildFile; fileRef = DB94A10CC4D333BF2F81A4C3 /* roasts.json */; };
+		24815A44F3E3F769E3182E30 /* ContentLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CCE6864E40E3DCCB5D5FA /* ContentLibrary.swift */; };
+		290A13C2002301FF9834ED9D /* encouragements.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B0266F7A6AB652F7C757766 /* encouragements.json */; };
+		30847DF1EC8A8487FD188181 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A9976CBF7A6AE351965AC /* NotificationScheduler.swift */; };
+		31F3F54C2D1863A59F0468C0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471E46FC6F730900752172B /* SettingsView.swift */; };
+		399BEF36EDB9170A978B4F49 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B956DACBAF23378D5E811 /* OnboardingView.swift */; };
+		5857C9DB30213C4E22EA3B5D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2606BBE4691B5ECD1C4D6C88 /* Models.swift */; };
+		5B4577DB4B09F0EC0B0FBE30 /* LockscreenCatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E10DF9D440978B56DC7B3F /* LockscreenCatApp.swift */; };
+		60C252924668304FE936C9AF /* HealthReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5048698750EF897EA4A576E /* HealthReader.swift */; };
+		62143E086460DF32978FCD88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8AD80BFD8673D59BC095BD /* Assets.xcassets */; };
+		65BBCA2389D4B204C634F35F /* ToneRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1740330AEEF7243E3B0ABF4 /* ToneRule.swift */; };
+		749671CB1E97F8DB6354A758 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBAC03974A3D702C320324 /* SampleData.swift */; };
+		74A879E63142B0CE4D143081 /* ContentLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CCE6864E40E3DCCB5D5FA /* ContentLibrary.swift */; };
+		75277606AFE88AD2AF22ED66 /* encouragements_dog.json in Resources */ = {isa = PBXBuildFile; fileRef = 962C5EC13600BF8661A7CD08 /* encouragements_dog.json */; };
+		815F2820A762D06CCF56C418 /* LockscreenCatWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F764BF877CF72CBF4D3DA /* LockscreenCatWidget.swift */; };
+		817A4EC75BE4F140B63F3505 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CEE360096E66308B4E3821 /* SharedStore.swift */; };
+		83716FF31AF5D88E1C913DD3 /* roasts.json in Resources */ = {isa = PBXBuildFile; fileRef = DB94A10CC4D333BF2F81A4C3 /* roasts.json */; };
+		881D35765D8EB14ACCE6769D /* PetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908DAB53967573A1B6BBD7F2 /* PetState.swift */; };
+		8D00B450BA4FC7D64CE13555 /* roasts_dog.json in Resources */ = {isa = PBXBuildFile; fileRef = 507FEB239F8835191A7BAF3F /* roasts_dog.json */; };
+		8E44E0872A14D0EAE3B76CD2 /* WidgetAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37147AD98DC83C95CDDA3F0D /* WidgetAssets.xcassets */; };
+		9374DF621AF151A69BD46F1D /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA3169B14AE0C1D5E8E284 /* AppModel.swift */; };
+		9457C47A2830503B3FFD6244 /* ToneRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1740330AEEF7243E3B0ABF4 /* ToneRule.swift */; };
+		9B73049423D78C8DF352E6E2 /* PetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908DAB53967573A1B6BBD7F2 /* PetState.swift */; };
+		A2EB9813F4D96D988CAB2477 /* encouragements_dog.json in Resources */ = {isa = PBXBuildFile; fileRef = 962C5EC13600BF8661A7CD08 /* encouragements_dog.json */; };
+		AF04F3E8AE64272A7AE7350F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568EFD19152A1525FEE06107 /* Theme.swift */; };
+		B23BED850C92C3BCCA39932D /* LineEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C462C82404868287D0884B /* LineEngine.swift */; };
+		BAF35D2DFDF32C63001C90DE /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB680434B0AFD2157490DD7 /* AppConfig.swift */; };
+		C5DBB99F2B4290C40A16EEC5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2606BBE4691B5ECD1C4D6C88 /* Models.swift */; };
+		C7B82228E349D9D46ADA6056 /* roasts_dog.json in Resources */ = {isa = PBXBuildFile; fileRef = 507FEB239F8835191A7BAF3F /* roasts_dog.json */; };
+		C81CBEDA0613192FAA5F5A0B /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB680434B0AFD2157490DD7 /* AppConfig.swift */; };
+		CBA037EB1900211C1AC889AF /* ShareCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70E14FFA7A2718DBBB75E5 /* ShareCardView.swift */; };
+		CECA85BD02D3388D027EDB45 /* Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E26880ACD3B0D04237E3F6 /* Copy.swift */; };
+		D8261DD86CA0E5AC5884A303 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBAC03974A3D702C320324 /* SampleData.swift */; };
+		DDEF5866DF3548212B016EEA /* encouragements.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B0266F7A6AB652F7C757766 /* encouragements.json */; };
+		E83AD287D0FDBB45623A435E /* HealthReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5048698750EF897EA4A576E /* HealthReader.swift */; };
+		E95EA59CBA7F15DE247DF3D7 /* Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E26880ACD3B0D04237E3F6 /* Copy.swift */; };
+		F12D6CDAC730FFCAB450DD35 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD374865A01C7D2982CA27D /* Pet.swift */; };
+		9129FFECDB67EA9FF3236507 /* LockscreenCatWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1B442E42980596EBCD246D51 /* LockscreenCatWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		88DFCF770DE7896BFD48B7E0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB2BFD4A1989C48DA1B5D4 /* WidgetKit.framework */; };
+		F9277C0CCB58ECDA34A7F5A6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B3016F92D46D1CC3FB1C398 /* SwiftUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99E6A51DA0B86FE48AEB34ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0661F517A86C8F5C87C0EDBA;
+			remoteInfo = LockscreenCatWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAE1492BDE49D13FF7E211EB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9129FFECDB67EA9FF3236507 /* LockscreenCatWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		99DA3169B14AE0C1D5E8E284 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		B2F7709ADD413C69CF7C26B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		72E10DF9D440978B56DC7B3F /* LockscreenCatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockscreenCatApp.swift; sourceTree = "<group>"; };
+		7F5A9976CBF7A6AE351965AC /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
+		E93B956DACBAF23378D5E811 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		0471E46FC6F730900752172B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EA70E14FFA7A2718DBBB75E5 /* ShareCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardView.swift; sourceTree = "<group>"; };
+		568EFD19152A1525FEE06107 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		BBB680434B0AFD2157490DD7 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		CA6CCE6864E40E3DCCB5D5FA /* ContentLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLibrary.swift; sourceTree = "<group>"; };
+		42E26880ACD3B0D04237E3F6 /* Copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copy.swift; sourceTree = "<group>"; };
+		A5048698750EF897EA4A576E /* HealthReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthReader.swift; sourceTree = "<group>"; };
+		32C462C82404868287D0884B /* LineEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineEngine.swift; sourceTree = "<group>"; };
+		2606BBE4691B5ECD1C4D6C88 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		8FD374865A01C7D2982CA27D /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		908DAB53967573A1B6BBD7F2 /* PetState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetState.swift; sourceTree = "<group>"; };
+		86FBAC03974A3D702C320324 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		26CEE360096E66308B4E3821 /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		B1740330AEEF7243E3B0ABF4 /* ToneRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneRule.swift; sourceTree = "<group>"; };
+		E18F764BF877CF72CBF4D3DA /* LockscreenCatWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockscreenCatWidget.swift; sourceTree = "<group>"; };
+		BC8AD80BFD8673D59BC095BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37147AD98DC83C95CDDA3F0D /* WidgetAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WidgetAssets.xcassets; sourceTree = "<group>"; };
+		4B0266F7A6AB652F7C757766 /* encouragements.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = encouragements.json; sourceTree = "<group>"; };
+		962C5EC13600BF8661A7CD08 /* encouragements_dog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = encouragements_dog.json; sourceTree = "<group>"; };
+		DB94A10CC4D333BF2F81A4C3 /* roasts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = roasts.json; sourceTree = "<group>"; };
+		507FEB239F8835191A7BAF3F /* roasts_dog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = roasts_dog.json; sourceTree = "<group>"; };
+		36291340F8E26B93BEB58318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA732798FA80896641F5DF73 /* LockscreenCat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LockscreenCat.entitlements; sourceTree = "<group>"; };
+		699308608D0E40BFEEA52244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEC71CA94CE7238F06C2635C /* LockscreenCatWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LockscreenCatWidget.entitlements; sourceTree = "<group>"; };
+		514026DAF5A4332B2EEB1A3A /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		84337AD8D27FCD69AF2C4FC2 /* LockscreenCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LockscreenCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B442E42980596EBCD246D51 /* LockscreenCatWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LockscreenCatWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		20CB2BFD4A1989C48DA1B5D4 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		6B3016F92D46D1CC3FB1C398 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB575B01C9EDB90A46216F71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1086C652A1DC08F38290131F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88DFCF770DE7896BFD48B7E0 /* WidgetKit.framework in Frameworks */,
+				F9277C0CCB58ECDA34A7F5A6 /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		518DA81DB9B99529C0C0AEBE = {
+			isa = PBXGroup;
+			children = (
+				D1D0524B025E57AFFF263442 /* App */,
+				206D9AE6A6433106E0AF6963 /* Widget */,
+				B46A6AFB1DC88CE23F6E63F1 /* Shared */,
+				BD13AA3ACFF3D0C2ED6E4720 /* Config */,
+				B687106895D06AA330DAFED5 /* Frameworks */,
+				2F3A6B1E78F896718625FF06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1D0524B025E57AFFF263442 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				99DA3169B14AE0C1D5E8E284 /* AppModel.swift */,
+				B2F7709ADD413C69CF7C26B6 /* ContentView.swift */,
+				72E10DF9D440978B56DC7B3F /* LockscreenCatApp.swift */,
+				7F5A9976CBF7A6AE351965AC /* NotificationScheduler.swift */,
+				E93B956DACBAF23378D5E811 /* OnboardingView.swift */,
+				0471E46FC6F730900752172B /* SettingsView.swift */,
+				EA70E14FFA7A2718DBBB75E5 /* ShareCardView.swift */,
+				568EFD19152A1525FEE06107 /* Theme.swift */,
+				36291340F8E26B93BEB58318 /* Info.plist */,
+				EA732798FA80896641F5DF73 /* LockscreenCat.entitlements */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		206D9AE6A6433106E0AF6963 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				E18F764BF877CF72CBF4D3DA /* LockscreenCatWidget.swift */,
+				37147AD98DC83C95CDDA3F0D /* WidgetAssets.xcassets */,
+				699308608D0E40BFEEA52244 /* Info.plist */,
+				DEC71CA94CE7238F06C2635C /* LockscreenCatWidget.entitlements */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		B46A6AFB1DC88CE23F6E63F1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BBB680434B0AFD2157490DD7 /* AppConfig.swift */,
+				CA6CCE6864E40E3DCCB5D5FA /* ContentLibrary.swift */,
+				42E26880ACD3B0D04237E3F6 /* Copy.swift */,
+				A5048698750EF897EA4A576E /* HealthReader.swift */,
+				32C462C82404868287D0884B /* LineEngine.swift */,
+				2606BBE4691B5ECD1C4D6C88 /* Models.swift */,
+				8FD374865A01C7D2982CA27D /* Pet.swift */,
+				908DAB53967573A1B6BBD7F2 /* PetState.swift */,
+				86FBAC03974A3D702C320324 /* SampleData.swift */,
+				26CEE360096E66308B4E3821 /* SharedStore.swift */,
+				B1740330AEEF7243E3B0ABF4 /* ToneRule.swift */,
+				BC8AD80BFD8673D59BC095BD /* Assets.xcassets */,
+				D3253EB249D6D3F78E52DD2F /* Content */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D3253EB249D6D3F78E52DD2F /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				4B0266F7A6AB652F7C757766 /* encouragements.json */,
+				962C5EC13600BF8661A7CD08 /* encouragements_dog.json */,
+				DB94A10CC4D333BF2F81A4C3 /* roasts.json */,
+				507FEB239F8835191A7BAF3F /* roasts_dog.json */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		BD13AA3ACFF3D0C2ED6E4720 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				514026DAF5A4332B2EEB1A3A /* Signing.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		B687106895D06AA330DAFED5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20CB2BFD4A1989C48DA1B5D4 /* WidgetKit.framework */,
+				6B3016F92D46D1CC3FB1C398 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F3A6B1E78F896718625FF06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84337AD8D27FCD69AF2C4FC2 /* LockscreenCat.app */,
+				1B442E42980596EBCD246D51 /* LockscreenCatWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3435DDA2687639586BF0B70 /* LockscreenCat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3916763AE9CB67624F00ECC /* Build configuration list for PBXNativeTarget "LockscreenCat" */;
+			buildPhases = (
+				25D9BA1528E55E2E0F1B2769 /* Sources */,
+				DB575B01C9EDB90A46216F71 /* Frameworks */,
+				0BC40DDAB69570E4FBE53FB5 /* Resources */,
+				BAE1492BDE49D13FF7E211EB /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE1DEC3FECAFB049B3EB4C70 /* PBXTargetDependency */,
+			);
+			name = LockscreenCat;
+			productName = LockscreenCat;
+			productReference = 84337AD8D27FCD69AF2C4FC2 /* LockscreenCat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0661F517A86C8F5C87C0EDBA /* LockscreenCatWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACC395781962BDA76D938CB /* Build configuration list for PBXNativeTarget "LockscreenCatWidgetExtension" */;
+			buildPhases = (
+				9E1A4B81852F4FF00B27E369 /* Sources */,
+				1086C652A1DC08F38290131F /* Frameworks */,
+				2E7EF02DDB63146B3F0A46AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LockscreenCatWidgetExtension;
+			productName = LockscreenCatWidgetExtension;
+			productReference = 1B442E42980596EBCD246D51 /* LockscreenCatWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E3435DDA2687639586BF0B70 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					0661F517A86C8F5C87C0EDBA = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 6274E0C0E588DD8101015FC3 /* Build configuration list for PBXProject "LockscreenCat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 518DA81DB9B99529C0C0AEBE;
+			productRefGroup = 2F3A6B1E78F896718625FF06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3435DDA2687639586BF0B70 /* LockscreenCat */,
+				0661F517A86C8F5C87C0EDBA /* LockscreenCatWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BC40DDAB69570E4FBE53FB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62143E086460DF32978FCD88 /* Assets.xcassets in Resources */,
+				DDEF5866DF3548212B016EEA /* encouragements.json in Resources */,
+				A2EB9813F4D96D988CAB2477 /* encouragements_dog.json in Resources */,
+				1F2A045271F83A393A8294E8 /* roasts.json in Resources */,
+				C7B82228E349D9D46ADA6056 /* roasts_dog.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E7EF02DDB63146B3F0A46AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E44E0872A14D0EAE3B76CD2 /* WidgetAssets.xcassets in Resources */,
+				290A13C2002301FF9834ED9D /* encouragements.json in Resources */,
+				75277606AFE88AD2AF22ED66 /* encouragements_dog.json in Resources */,
+				83716FF31AF5D88E1C913DD3 /* roasts.json in Resources */,
+				8D00B450BA4FC7D64CE13555 /* roasts_dog.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25D9BA1528E55E2E0F1B2769 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9374DF621AF151A69BD46F1D /* AppModel.swift in Sources */,
+				1E03B7284D37D7A6AEB4A164 /* ContentView.swift in Sources */,
+				5B4577DB4B09F0EC0B0FBE30 /* LockscreenCatApp.swift in Sources */,
+				30847DF1EC8A8487FD188181 /* NotificationScheduler.swift in Sources */,
+				399BEF36EDB9170A978B4F49 /* OnboardingView.swift in Sources */,
+				31F3F54C2D1863A59F0468C0 /* SettingsView.swift in Sources */,
+				CBA037EB1900211C1AC889AF /* ShareCardView.swift in Sources */,
+				AF04F3E8AE64272A7AE7350F /* Theme.swift in Sources */,
+				C81CBEDA0613192FAA5F5A0B /* AppConfig.swift in Sources */,
+				74A879E63142B0CE4D143081 /* ContentLibrary.swift in Sources */,
+				E95EA59CBA7F15DE247DF3D7 /* Copy.swift in Sources */,
+				E83AD287D0FDBB45623A435E /* HealthReader.swift in Sources */,
+				B23BED850C92C3BCCA39932D /* LineEngine.swift in Sources */,
+				5857C9DB30213C4E22EA3B5D /* Models.swift in Sources */,
+				F12D6CDAC730FFCAB450DD35 /* Pet.swift in Sources */,
+				881D35765D8EB14ACCE6769D /* PetState.swift in Sources */,
+				D8261DD86CA0E5AC5884A303 /* SampleData.swift in Sources */,
+				05DC1431E82FC284B6836C0C /* SharedStore.swift in Sources */,
+				65BBCA2389D4B204C634F35F /* ToneRule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E1A4B81852F4FF00B27E369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				815F2820A762D06CCF56C418 /* LockscreenCatWidget.swift in Sources */,
+				BAF35D2DFDF32C63001C90DE /* AppConfig.swift in Sources */,
+				24815A44F3E3F769E3182E30 /* ContentLibrary.swift in Sources */,
+				CECA85BD02D3388D027EDB45 /* Copy.swift in Sources */,
+				60C252924668304FE936C9AF /* HealthReader.swift in Sources */,
+				0201312DB527814ED247EB85 /* LineEngine.swift in Sources */,
+				C5DBB99F2B4290C40A16EEC5 /* Models.swift in Sources */,
+				18B71EE00B6EEA6C3A6F2811 /* Pet.swift in Sources */,
+				9B73049423D78C8DF352E6E2 /* PetState.swift in Sources */,
+				749671CB1E97F8DB6354A758 /* SampleData.swift in Sources */,
+				817A4EC75BE4F140B63F3505 /* SharedStore.swift in Sources */,
+				9457C47A2830503B3FFD6244 /* ToneRule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE1DEC3FECAFB049B3EB4C70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0661F517A86C8F5C87C0EDBA /* LockscreenCatWidgetExtension */;
+			targetProxy = 99E6A51DA0B86FE48AEB34ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06125DCB1954C4F7EEE69894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 514026DAF5A4332B2EEB1A3A /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AACF5BDB2BC481EB947517D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 514026DAF5A4332B2EEB1A3A /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0DD1C3E4BFC124D878FE440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/LockscreenCat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).lockscreencat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		699FCDBED06EC64C8A6B513F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/LockscreenCat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).lockscreencat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D575AB479E12FC2A0F74F307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Widget/LockscreenCatWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).lockscreencat.widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F4E296410894D8ED26377CE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Widget/LockscreenCatWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).lockscreencat.widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6274E0C0E588DD8101015FC3 /* Build configuration list for PBXProject "LockscreenCat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06125DCB1954C4F7EEE69894 /* Debug */,
+				AACF5BDB2BC481EB947517D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3916763AE9CB67624F00ECC /* Build configuration list for PBXNativeTarget "LockscreenCat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0DD1C3E4BFC124D878FE440 /* Debug */,
+				699FCDBED06EC64C8A6B513F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BACC395781962BDA76D938CB /* Build configuration list for PBXNativeTarget "LockscreenCatWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D575AB479E12FC2A0F74F307 /* Debug */,
+				F4E296410894D8ED26377CE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}

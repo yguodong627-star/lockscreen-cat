@@ -1,0 +1,18 @@
+{
+  "images": [
+    {
+      "filename": "dog-nightowl@2x.png",
+      "idiom": "universal",
+      "scale": "2x"
+    },
+    {
+      "filename": "dog-nightowl@3x.png",
+      "idiom": "universal",
+      "scale": "3x"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1
+  }
+}

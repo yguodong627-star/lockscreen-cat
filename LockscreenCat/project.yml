@@ -1,0 +1,68 @@
+# XcodeGen 备用方案：brew install xcodegen && xcodegen
+# 会重新生成 LockscreenCat.xcodeproj（覆盖手写版本）。签名相关只需改 Config/Signing.xcconfig。
+name: LockscreenCat
+options:
+  deploymentTarget:
+    iOS: "17.0"
+  developmentLanguage: zh-Hans
+  createIntermediateGroups: true
+configFiles:
+  Debug: Config/Signing.xcconfig
+  Release: Config/Signing.xcconfig
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_STYLE: Automatic
+    TARGETED_DEVICE_FAMILY: "1"
+    GENERATE_INFOPLIST_FILE: NO
+targets:
+  LockscreenCat:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(BUNDLE_ID_PREFIX).lockscreencat
+        INFOPLIST_FILE: App/Info.plist
+        CODE_SIGN_ENTITLEMENTS: App/LockscreenCat.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        SUPPORTS_MACCATALYST: NO
+        TARGETED_DEVICE_FAMILY: "1"
+    dependencies:
+      - target: LockscreenCatWidgetExtension
+        embed: true
+  LockscreenCatWidgetExtension:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: Widget          # 含 WidgetAssets.xcassets（小图，tools/make_widget_assets.py 生成）
+      - path: Shared
+        excludes:
+          - Assets.xcassets   # 1024px 原图只给 App；小组件用大图会超内存/归档失败 → 锁屏灰块
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(BUNDLE_ID_PREFIX).lockscreencat.widget
+        INFOPLIST_FILE: Widget/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Widget/LockscreenCatWidget.entitlements
+        APPLICATION_EXTENSION_API_ONLY: YES
+        SKIP_INSTALL: YES
+        TARGETED_DEVICE_FAMILY: "1"
+    dependencies:
+      - sdk: WidgetKit.framework
+      - sdk: SwiftUI.framework
+schemes:
+  LockscreenCat:
+    build:
+      targets:
+        LockscreenCat: all
+        LockscreenCatWidgetExtension: all
+    run:
+      config: Debug
+    archive:
+      config: Release
