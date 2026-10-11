@@ -26,7 +26,7 @@
 BUNDLE_ID_PREFIX = com.example.yourname
 ```
 
-改成你自己的、别人不会用的前缀，例如 `com.yangguodong.cat2026`（只用字母、数字、点和横线）。改完后会自动得到：
+改成你自己的、别人不会用的前缀，例如 `com.zhangsan.cat2026`（只用字母、数字、点和横线）。改完后会自动得到：
 
 | 项目 | 值 |
 |---|---|

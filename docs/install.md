@@ -10,7 +10,7 @@
 
 ## 二、打开工程并签名
 1. 打开工程文件夹，双击 `ios/LockscreenCat/LockscreenCat.xcodeproj`。
-2. 改 Bundle ID 前缀（只改这一处）：在 Xcode 左侧打开 `Config/Signing.xcconfig`，把 `BUNDLE_ID_PREFIX = com.example.yourname` 改成你自己独一无二的前缀，比如 `com.yangguodong.cat2026`，然后保存。改完后下面三个名字会自动跟着变，不用手动改：
+2. 改 Bundle ID 前缀（只改这一处）：在 Xcode 左侧打开 `Config/Signing.xcconfig`，把 `BUNDLE_ID_PREFIX = com.example.yourname` 改成你自己独一无二的前缀，比如 `com.zhangsan.cat2026`（换成你自己的拼音或英文名），然后保存。从 GitHub 下载的工程里默认是占位符 `com.example.yourname`，不改的话签名会失败，所以这一步必须做。改完后下面三个名字会自动跟着变，不用手动改：
    - App：`<前缀>.lockscreencat`
    - 小组件：`<前缀>.lockscreencat.widget`
    - App Group：`group.<前缀>.lockscreencat`

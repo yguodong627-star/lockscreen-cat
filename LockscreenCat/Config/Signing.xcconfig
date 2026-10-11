@@ -2,8 +2,8 @@
 //  签名配置 —— 只需要改这里（免费 Apple ID 必须用一个全球唯一的 Bundle ID）
 // =====================================================================
 
-// 1) 把 com.example.yourname 改成你自己的、独一无二的前缀，比如 com.yangguodong.cat2026
-BUNDLE_ID_PREFIX = com.yangguodong.cat2026
+// 1) 把 com.example.yourname 改成你自己的、独一无二的前缀，比如 com.zhangsan.cat2026
+BUNDLE_ID_PREFIX = com.example.yourname
 
 // 2) 开发团队：留空即可，在 Xcode 里给两个 target 选 “(Personal Team)” 就行。
 //    也可以把 Team ID（10 位字母数字）填在这里，两个 target 会一起生效。
