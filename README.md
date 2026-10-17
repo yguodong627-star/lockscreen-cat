@@ -8,9 +8,9 @@
 | --- | --- | --- |
 | **iOS App** | `LockscreenCat/` | Xcode 工程：App、锁屏小组件 Widget、共享逻辑 Shared、签名配置 Config |
 | iOS App | `assets/` | 猫狗表情插画（彩色 + 单色）、预览图、配色说明 |
-| iOS App | `tools/`、`docs/` | 插画/工程/句库生成与校验脚本；安装说明、文案、评审记录 |
+| iOS App | `tools/` | 插画/工程/句库生成与校验脚本、逻辑测试 |
 | iOS App | `mockup.png` | 锁屏效果示意图 |
-| **网站** | `web/` | 纯前端网页演示（index.html、style.css、app.js、data.js、img/），线上页面从 `gh-pages` 分支（内容同 web/）发布到 GitHub Pages |
+| **网站** | `docs/` | 网页文件只有 `docs/` 下的 `index.html`、`style.css`、`app.js`、`data.js`、`img/`（另有 `.nojekyll`、网页说明 `README.md`）；GitHub Pages 直接从 `main` 分支的 `/docs` 发布。`docs/` 里的 `copy.md`、`install.md`、`review.md` 是文档，不是网页 |
 
 网页版只是演示：步数和睡眠由你手动设置，规则和句库与 iOS 版一致；真正读取健康数据、放上锁屏的是 iOS App。
 
@@ -38,7 +38,7 @@
 | `LockscreenCat/` | iOS 工程（App、Widget、Shared、Config、art） |
 | `assets/` | 角色插画、预览图、配色说明 |
 | `tools/` | 插画 / 图标 / 工程文件生成脚本、逻辑测试，以及句库生成与校验脚本（build*.py、validate_all.py） |
-| `docs/` | 安装说明（install.md）、文案说明（copy.md）、评审记录（review.md） |
+| `docs/` | 网站文件（index.html、style.css、app.js、data.js、img/）+ 文档（install.md 安装说明、copy.md 文案说明、review.md 评审记录） |
 
 ## 说明
 

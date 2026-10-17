@@ -9,4 +9,6 @@
 - `img/`：表情素材（彩色 + 单色）
 
 数据只存在浏览器 localStorage。网页版里步数和睡眠是手动设置的，真正读取健康数据只有 iOS App 能做。
-本目录是网页源码；线上页面从 `gh-pages` 分支发布（内容就是本目录的拷贝，改完 web/ 后同步过去即可）。
+本目录（`docs/`）既是网页源码，也是发布目录：GitHub Pages 直接从 `main` 分支的 `/docs` 发布，改完提交推送即可，无需同步 gh-pages。
+
+注意：`docs/` 里的 `copy.md`、`install.md`、`review.md` 是项目文档，不是网页；网页文件只有 index.html、style.css、app.js、data.js、img/。
