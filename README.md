@@ -1,5 +1,21 @@
 # 锁屏萌宠 · lockscreen-cat
 
+> **在线体验网页版：https://yguodong627-star.github.io/lockscreen-cat/**（不用装 App，浏览器里拖滑块就能看小猫/小狗怎么说你）
+
+## 文件说明
+
+| 部分 | 路径 | 说明 |
+| --- | --- | --- |
+| **iOS App** | `LockscreenCat/` | Xcode 工程：App、锁屏小组件 Widget、共享逻辑 Shared、签名配置 Config |
+| iOS App | `assets/` | 猫狗表情插画（彩色 + 单色）、预览图、配色说明 |
+| iOS App | `tools/`、`docs/` | 插画/工程/句库生成与校验脚本；安装说明、文案、评审记录 |
+| iOS App | `mockup.png` | 锁屏效果示意图 |
+| **网站** | `web/` | 纯前端网页演示（index.html、style.css、app.js、data.js、img/），线上页面从 `gh-pages` 分支（内容同 web/）发布到 GitHub Pages |
+
+网页版只是演示：步数和睡眠由你手动设置，规则和句库与 iOS 版一致；真正读取健康数据、放上锁屏的是 iOS App。
+
+---
+
 住在 iPhone 锁屏上的小猫 / 小狗：读你的**步数**和**睡眠**，按当天数据换表情，每晚给你一句旁白——该嫌弃就嫌弃，该夸就夸。
 
 - SwiftUI + WidgetKit + HealthKit，iOS 17+

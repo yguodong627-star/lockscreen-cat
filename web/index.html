@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>锁屏萌宠 · 网页版演示</title>
+<meta name="description" content="拖动步数和睡眠，看锁屏上的小猫小狗怎么夸你、怎么嫌弃你。iOS App「锁屏萌宠」的网页演示。">
+<link rel="icon" href="img/app-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <img class="logo" src="img/app-icon.png" alt="">
+  <div>
+    <h1>锁屏萌宠</h1>
+    <p>你的步数和睡眠，它都看在眼里。<span class="tag">网页演示</span></p>
+  </div>
+  <a class="ios" href="https://github.com/yguodong627-star/lockscreen-cat" target="_blank" rel="noopener">iOS 版源码 ↗</a>
+</header>
+
+<main class="wrap">
+  <section class="panel" aria-label="设置">
+    <div class="block">
+      <h2>谁来盯你</h2>
+      <div class="seg pets" id="petSeg">
+        <button data-pet="cat"><img src="img/cat-happy.png" alt="">小猫</button>
+        <button data-pet="dog"><img src="img/dog-happy.png" alt="">小狗</button>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>今天走了多少</h2>
+      <div class="big"><input id="stepsNum" type="number" min="0" max="30000" step="100" inputmode="numeric"><span>步</span></div>
+      <input id="steps" type="range" min="0" max="25000" step="100">
+      <div class="ticks"><i>0</i><i>3000</i><i>6000</i><i>10000</i><i>2.5万</i></div>
+    </div>
+
+    <div class="block" id="sleepBlock">
+      <h2>昨晚怎么睡的</h2>
+      <label class="row"><span>入睡时间</span><b id="bedLabel"></b></label>
+      <input id="bed" type="range" min="120" max="600" step="5">
+      <label class="row"><span>睡了多久</span><b id="durLabel"></b></label>
+      <input id="dur" type="range" min="180" max="720" step="15">
+      <p class="hint" id="wakeHint"></p>
+      <label class="check"><input type="checkbox" id="noSleep"> 没读到睡眠记录</label>
+    </div>
+
+    <div class="block">
+      <h2>现在几点</h2>
+      <div class="seg" id="phaseSeg">
+        <button data-phase="auto">跟随此刻</button>
+        <button data-phase="morning">早上</button>
+        <button data-phase="daytime">白天</button>
+        <button data-phase="evening">晚上</button>
+      </div>
+      <p class="hint" id="phaseHint"></p>
+      <label class="check"><input type="checkbox" id="streak"> 假设前三天都被吐槽过</label>
+    </div>
+
+    <div class="block why">
+      <h2>它凭什么这么说</h2>
+      <p id="why"></p>
+    </div>
+  </section>
+
+  <section class="stage" aria-label="预览">
+    <div class="seg view" id="viewSeg">
+      <button data-view="lock">锁屏 · 单色</button>
+      <button data-view="home">桌面 · 彩色</button>
+    </div>
+
+    <div class="phone" id="phone">
+      <div class="island"></div>
+      <div class="screen lock" id="screen">
+        <div class="status"><span id="stTime">9:41</span><span class="bat"><i></i></span></div>
+
+        <div class="lockface">
+          <div class="date" id="lockDate"></div>
+          <div class="clock" id="lockClock"></div>
+          <div class="lw">
+            <img id="lwImg" alt="">
+            <div class="lwt"><b id="lwCap"></b><span id="lwLine"></span></div>
+          </div>
+        </div>
+
+        <div class="homeface">
+          <div class="mw">
+            <div class="mwhead"><span id="mwDay"></span><em id="mwBadge"></em></div>
+            <img id="mwImg" alt="">
+            <b id="mwCap"></b>
+            <p id="mwLine"></p>
+          </div>
+          <div class="apps" id="apps"></div>
+          <div class="dock"><i></i><i></i><i></i><i></i></div>
+        </div>
+
+        <div class="lockbtns"><i>🔦</i><i>📷</i></div>
+        <div class="homebar"></div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="ghost" id="shuffle">换一句</button>
+      <button class="ghost" id="reroll" title="只在“一半一半”的日子才有区别">重新抽今天的基调</button>
+      <button class="main" id="makeCard">生成分享卡片</button>
+    </div>
+    <p class="mood" id="moodName"></p>
+  </section>
+</main>
+
+<div class="modal" id="modal" hidden>
+  <div class="sheet">
+    <canvas id="card" width="1080" height="1560"></canvas>
+    <div class="sheetbtns">
+      <button class="main" id="dl">下载 PNG</button>
+      <button class="ghost" id="close">关闭</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>这是 iOS App「锁屏萌宠」的网页演示：规则和句库与 App 一致，数据在这里是你手动设的，只存在你的浏览器里，不联网。</p>
+  <p><a href="https://github.com/yguodong627-star/lockscreen-cat" target="_blank" rel="noopener">iOS 版仓库</a> · <a href="https://github.com/yguodong627-star/vibe-lockscreen-cat-web" target="_blank" rel="noopener">网页版仓库</a></p>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
